@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>json of javascrip</h2>
+    <p id="demo"></p>
+    <script>
+        const name='{"employee":['+'{"firstname":"vanda","lastname":"keo"},'+
+                   '{"firstname":"kim","lastname":"long"},'+'{"firstname":"chan","lastname":"Dara"}]}';
+
+        let obj=JSON.parse(name);
+        document.getElementById("demo").innerHTML=obj.employee[0].firstname+" "+obj.employee[0].lastname;           
+    </script>
+</body>
+</html>

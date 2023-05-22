@@ -1,0 +1,425 @@
+<!DOCTYPE html>																			
+<html class="wp-toolbar"																			
+"	lang=""en-US"" xmlns:og=""http://ogp.me/ns#"" xmlns:fb=""http://ogp.me/ns/fb#"">"																			
+<head>																			
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />																			
+"	<title>Export Payment Transactions &lsaquo; Yeacambodia &#8212; WordPress</title>"																			
+<script type="text/javascript">																			
+addLoadEvent = function(func){if(typeof jQuery!=='undefined')jQuery(document).ready(func);else if(typeof wpOnload!=='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};																			
+var ajaxurl = '/wp-admin/admin-ajax.php'																			
+"	pagenow = 'toplevel_page_export-payment'"																			
+"	typenow = ''"																			
+"	adminpage = 'toplevel_page_export-payment'"																			
+"	thousandsSeparator = '"	'																		
+"	decimalPoint = '.'"																			
+"	isRtl = 0;"																			
+</script>																			
+"		<script>"																			
+"			var AdminColumns = {};"																			
+"		</script>"																			
+"		<link rel='dns-prefetch' href='//www.google.com' />"																			
+<link rel='dns-prefetch' href='//unpkg.com' />																			
+<link rel='dns-prefetch' href='//s.w.org' />																			
+<style type="text/css">																			
+img.wp-smiley																			
+img.emoji {																			
+"	display: inline !important;"																			
+"	border: none !important;"																			
+"	box-shadow: none !important;"																			
+"	height: 1em !important;"																			
+"	width: 1em !important;"																			
+"	margin: 0 .07em !important;"																			
+"	vertical-align: -0.1em !important;"																			
+"	background: none !important;"																			
+"	padding: 0 !important;"																			
+}																			
+</style>																			
+"	<link rel='stylesheet' href='https://staging.yeacambodia.org/wp-admin/load-styles.php?c=1&amp;dir=ltr&amp;load%5Bchunk_0%5D=dashicons"	admin-bar	common	forms	admin-menu	dashboard	list-tables	edit	revisions	media	themes	about	nav-menus	wp-pointer	widgets&amp;load%5Bchunk_1%5D=	site-icon	l10n	buttons	wp-auth-check&amp;ver=5.5.11' type="text/css" media='all' />	
+<link rel='stylesheet' id='colors-css'  href='https://staging.yeacambodia.org/wp-admin/css/colors/midnight/colors.min.css?ver=5.5.11' media='all' />																			
+<link rel='stylesheet' id='sucuriscan-css'  href='https://staging.yeacambodia.org/cdn/plugins/sucuri-scanner/inc/css/styles.css?ver=392ee99' media='all' />																			
+<link rel='stylesheet' id='ame-font-awesome-css'  href='https://staging.yeacambodia.org/cdn/plugins/admin-menu-editor-pro/extras/font-awesome/scss/font-awesome.css?ver=1675501485' media='all' />																			
+<link rel='stylesheet' id='acf-global-css'  href='https://staging.yeacambodia.org/cdn/plugins/advanced-custom-fields-pro/assets/css/acf-global.css?ver=5.8.9' media='all' />																			
+<link rel='stylesheet' id='admin-style-css'  href='https://staging.yeacambodia.org/cdn/plugins/cambo-customize-admin-dashboard/assets/style.css?ver=1.0.1' media='all' />																			
+<link rel='stylesheet' id='fbmcc-admin-css'  href='https://staging.yeacambodia.org/cdn/plugins/facebook-messenger-customer-chat/settings.css?ver=2.5' media='all' />																			
+<link rel='stylesheet' id='imagify-admin-bar-css'  href='https://staging.yeacambodia.org/cdn/plugins/imagify/assets/css/admin-bar.min.css?ver=1.9.13' media='all' />																			
+<link rel='stylesheet' id='ame-helper-style-css'  href='https://staging.yeacambodia.org/cdn/plugins/admin-menu-editor-pro/css/admin.css?ver=20140630-3' media='all' />																			
+<link rel='stylesheet' id='ame-force-dashicons-css'  href='https://staging.yeacambodia.org/cdn/plugins/admin-menu-editor-pro/css/force-dashicons.css?ver=20170607' media='all' />																			
+"		<script type=""text/javascript"">"																			
+"			window._wpemojiSettings = {""baseUrl"":""https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/"""	ext:".png"	svgUrl:"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/"	svgExt:".svg"	source:{"concatemoji":"https:\/\/staging.yeacambodia.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.11"}};															
+"			!function(e"	a	t){var n	r	o	i=a.createElement("canvas")	p=i.getContext&&i.getContext("2d");function s(e	t){var a=String.fromCharCode;p.clearRect(0	0	i.width	i.height)	p.fillText(a.apply(this	e)	0	0);e=i.toDataURL();return p.clearRect(0	0	i.width	i.height)	p.fillText(a.apply(this	t)
+"		</script>"																			
+"		"																			
+<script type='text/javascript'>																			
+/* <![CDATA[ */																			
+var userSettings = {"url":"\/"	uid:"1"	time:"1677133980"	secure:"1"};/* ]]> */																
+</script>																			
+<script type='text/javascript' src='https://staging.yeacambodia.org/wp-admin/load-scripts.php?c=1&amp;load%5Bchunk_0%5D=jquery-core	utils&amp;ver=5.5.11'></script>																		
+<script src='https://staging.yeacambodia.org/cdn/plugins/admin-menu-editor-pro/js/admin-helpers.js?ver=20160407-2' id='ame-helper-script-js'></script>																			
+<script src='https://staging.yeacambodia.org/cdn/plugins/wp-all-import/static/js/wp-all-import.js?ver=3.6.6' id='wp-all-import-script-js'></script>																			
+<script src='https://staging.yeacambodia.org/cdn/plugins/sucuri-scanner/inc/js/scripts.js?ver=d81486e' id='sucuriscan-js'></script>																			
+<script src='https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js?ver=5.5.11' id='qr-code-styling-js'></script>																			
+<script src='https://staging.yeacambodia.org/cdn/themes/yeacambodia/assets/scripts/admin-custom-script.js?ver=5.5.11' id='admin-custom-script-js'></script>																			
+"	"																			
+"	<style type=""text/css"">"																			
+"		#toplevel_page_pmxi-admin-home ul li:last-child{"																			
+"			display: none;"																			
+"		}"																			
+"	</style>"																			
+"		<script type=""text/javascript"">"																			
+"		var ajaxurl = 'https://staging.yeacambodia.org/wp-admin/admin-ajax.php';"																			
+"		var import_action = '';"																			
+"		var wp_all_import_security = 'e5cb093b8f';"																			
+"	</script>"																			
+"	<style type=""text/css"">"																			
+#wpadminbar #wp-admin-bar-language>div.ab-item{ background-size: 0;background-image: url(https://staging.yeacambodia.org/cdn/plugins/qtranslate-xt-master/flags/gb.png);}																			
+#wpadminbar ul li#wp-admin-bar-en {background-size: 0; background-image: url(https://staging.yeacambodia.org/cdn/plugins/qtranslate-xt-master/flags/gb.png); margin-right: 5px; }																			
+#wpadminbar ul li#wp-admin-bar-kh {background-size: 0; background-image: url(https://staging.yeacambodia.org/cdn/plugins/qtranslate-xt-master/flags/kh.png); margin-right: 5px; }																			
+</style>																			
+<style type="text/css" media="screen">																			
+input.qtranxs-translatable	 textarea.qtranxs-translatable	 div.qtranxs-translatable {																	
+border-left: 3px solid #69a8bb !important;																			
+}																			
+.qtranxs-lang-switch-wrap {																			
+    margin: 8px 0 4px;																			
+}																			
+.qtranxs-lang-switch	 .qtranxs-lang-copy {																		
+    margin: 1px 2px 1px 0;																			
+    display: inline-block;																			
+}																			
+.qtranxs-lang-switch-wrap .button {																			
+    height: auto;																			
+    padding: 0 6px;																			
+    vertical-align: initial;																			
+    white-space: nowrap																			
+}																			
+.qtranxs-lang-switch img {																			
+    vertical-align: middle;																			
+    margin-right: 4px;																			
+    margin-bottom: 2px;																			
+}																			
+.qtranxs-lang-copy .button {																			
+    margin-left: 20px;																			
+    line-height: 10px;																			
+    font-size: 10px;																			
+    border-radius: 12px;																			
+    padding: 4px 8px;																			
+    white-space: nowrap;																			
+}																			
+.qtranxs-lang-switch-wrap.copying .qtranxs-lang-switch:not(.active) .button {																			
+    cursor: copy;																			
+    border: dashed 1px #0085ba;																			
+}																			
+.qtranxs-lang-switch-wrap.copying .qtranxs-lang-switch.active .button {																			
+    cursor: default;																			
+    border: double 1px #0085ba;																			
+}																			
+.qtranxs-lang-switch-wrap.copying .qtranxs-lang-copy .button {																			
+    cursor: copy;																			
+}																			
+</style>																			
+            <style>																			
+                .multi-language-field {																			
+                    margin-top: 0 !important;																			
+                }																			
+																			
+                .multi-language-field .wp-switch-editor[data-language] {																			
+                    display: none !important;																			
+                }																			
+            </style>																			
+"				<link id=""wp-admin-canonical"" rel=""canonical"" href=""https://staging.yeacambodia.org/wp-admin/admin.php?page=export-payment"" />"																			
+"	<script>"																			
+"		if ( window.history.replaceState ) {"																			
+"			window.history.replaceState( null"	 null	 document.getElementById( 'wp-admin-canonical' ).href + window.location.hash );																	
+"		}"																			
+"	</script>"																			
+"	<script type=""text/javascript"">var _wpColorScheme = {""icons"":{""base"":""#f1f2f3"""	focus:"#fff"	current:"#fff"}};</script>																	
+<link rel="icon" href="http://staging.yeacambodia.org/cdn/uploads/2020/11/cropped-YEAC-Logo-2-32x32.png" sizes="32x32" />																			
+<link rel="icon" href="http://staging.yeacambodia.org/cdn/uploads/2020/11/cropped-YEAC-Logo-2-192x192.png" sizes="192x192" />																			
+<link rel="apple-touch-icon" href="http://staging.yeacambodia.org/cdn/uploads/2020/11/cropped-YEAC-Logo-2-180x180.png" />																			
+<meta name="msapplication-TileImage" content="http://staging.yeacambodia.org/cdn/uploads/2020/11/cropped-YEAC-Logo-2-270x270.png" />																			
+<meta name="viewport" content="width=device-width	initial-scale=1.0"><style type="text/css" media="print">#wpadminbar { display:none; }</style>																		
+"	</head>"																			
+<body class="wp-admin wp-core-ui no-js acf-admin-5-3 toplevel_page_export-payment auto-fold admin-bar branch-5-5 version-5-5-11 admin-color-midnight locale-en-us no-customize-support no-svg php-error">																			
+<script type="text/javascript">																			
+"	document.body.className = document.body.className.replace('no-js'"	'js');																		
+</script>																			
+																			
+"	<script type=""text/javascript"">"																			
+"		(function() {"																			
+"			var request"	 b = document.body	 c = 'className'	 cs = 'customize-support'	 rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');															
+																			
+"				request = true;"																			
+"	"																			
+"			b[c] = b[c].replace( rcs"	 ' ' );																		
+"			// The customizer requires postMessage and CORS (if the site is cross domain)."																			
+"			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;"																			
+"		}());"																			
+"	</script>"																			
+"	"																			
+<div id="wpwrap">																			
+																			
+<div id="adminmenumain" role="navigation" aria-label="Main menu">																			
+<a href="#wpbody-content" class="screen-reader-shortcut">Skip to main content</a>																			
+<a href="#wp-toolbar" class="screen-reader-shortcut">Skip to toolbar</a>																			
+<div id="adminmenuback"></div>																			
+<div id="adminmenuwrap">																			
+<ul id="adminmenu">																			
+																			
+																			
+"	<li class=""wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-first"" id=""menu-dashboard"">"																			
+"	<a href='index.php' class=""wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-first"" aria-haspopup=""true""><div class=""wp-menu-arrow""><div></div></div><div class='wp-menu-image dashicons-before dashicons-dashboard'><br /></div><div class='wp-menu-name'>Dashboard</div></a>"																			
+"	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Dashboard</li><li class=""wp-first-item""><a href='index.php' class=""wp-first-item"">Home</a></li><li><a href='update-core.php'>Updates <span class=""update-plugins count-15""><span class=""update-count"">15</span></span></a></li></ul></li>"																			
+"	<li class=""wp-has-submenu wp-not-current-submenu menu-top ame-has-custom-dashicon ame-has-submenu-icons"">"																			
+"	<a href='users.php' class=""wp-has-submenu wp-not-current-submenu menu-top ame-has-custom-dashicon ame-has-submenu-icons"" aria-haspopup=""true""><div class=""wp-menu-arrow""><div></div></div><div class='wp-menu-image dashicons-before dashicons-marker'><br /></div><div class='wp-menu-name'>Web &#038; App</div></a>"																			
+"	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Web & App</li><li class=""wp-first-item""><a href='users.php' class=""wp-first-item"">All Users</a></li><li class="" ame-has-custom-dashicon""><a href='edit.php?post_type=pt-news-events' class="" ame-has-custom-dashicon""><div class=""ame-submenu-icon""><div class=""dashicons dashicons-format-aside""></div></div>News &amp; Event</a></li><li><a href='edit.php?post_type=pt-library'>Library</a></li><li><a href='edit.php?post_type=pt-network'>Network / Discussion</a></li><li><a href='edit-tags.php?taxonomy=provinces'>Provinces</a></li><li><a href='edit-tags.php?taxonomy=sectors'>Sectors</a></li><li class="" menu-icon-generic toplevel_page_op-about-us""><a href='admin.php?page=op-about-us' class="" menu-icon-generic toplevel_page_op-about-us"">About Us</a></li><li class="" ame-has-custom-dashicon""><a href='edit.php?post_type=pt-contact-us' class="" ame-has-custom-dashicon""><div class=""ame-submenu-icon""><div class=""dashicons dashicons-phone""></div></div>Contact Us</a></li><li class="" menu-icon-generic toplevel_page_op-who-we-are""><a href='admin.php?page=op-who-we-are' class="" menu-icon-generic toplevel_page_op-who-we-are"">Who we are</a></li><li><a href='edit.php?post_type=pt-news-events&page=acf-options-news-events-landing'>News Event Landing</a></li><li><a href='edit.php?post_type=pt-library&page=acf-options-library-landing'>Library Landing</a></li><li><a href='edit-comments.php'>All Comments</a></li><li><a href='profile.php'>Profile</a></li><li class="" menu-icon-generic toplevel_page_op-structure""><a href='admin.php?page=op-structure' class="" menu-icon-generic toplevel_page_op-structure"">Organizaion Structure</a></li><li><a href='edit.php?post_type=pt-secretariat-team&page=acf-options-secretarial-landing'>Secretarial Team Landing</a></li><li><a href='edit.php?post_type=pt-secretariat-team'>Secrtetarial Team</a></li><li><a href='edit.php?post_type=pt-history&page=acf-options-history-landing'>History Landing</a></li><li><a href='edit.php?post_type=pt-history'>History</a></li><li><a href='edit.php?post_type=pt-contact-us&page=acf-options-contact-us-landing'>Contact Us Landing</a></li></ul></li>"																			
+"	<li class=""wp-has-submenu wp-not-current-submenu menu-top ame-has-custom-dashicon ame-has-submenu-icons"">"																			
+"	<a href='edit.php?post_type=membership-trans' class=""wp-has-submenu wp-not-current-submenu menu-top ame-has-custom-dashicon ame-has-submenu-icons"" aria-haspopup=""true""><div class=""wp-menu-arrow""><div></div></div><div class='wp-menu-image dashicons-before dashicons-marker'><br /></div><div class='wp-menu-name'>App</div></a>"																			
+"	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>App</li><li class=""wp-first-item  ame-has-custom-dashicon""><a href='edit.php?post_type=membership-trans' class=""wp-first-item  ame-has-custom-dashicon""><div class=""ame-submenu-icon""><div class=""dashicons dashicons-money""></div></div>Membership Transactions</a></li><li class="" ame-has-custom-dashicon""><a href='edit.php?post_type=event-trans' class="" ame-has-custom-dashicon""><div class=""ame-submenu-icon""><div class=""dashicons dashicons-nametag""></div></div>Event Transactions</a></li><li class="" ame-has-custom-dashicon""><a href='edit.php?post_type=payment-trans' class="" ame-has-custom-dashicon""><div class=""ame-submenu-icon""><div class=""dashicons dashicons-welcome-write-blog""></div></div>Payment Transactions</a></li><li><a href='edit.php?post_type=feedback-from-app'>Feedback From App User</a></li><li><a href='edit.php?post_type=pt-promotion'><div class=""ame-submenu-icon""><div class=""ame-fa ame-fa-bullhorn""></div></div>Promotions</a></li><li class="" menu-icon-partner-sponser-app""><a href='edit.php?post_type=partner-sponser-app' class="" menu-icon-partner-sponser-app"">App Partner</a></li><li class="" menu-icon-generic toplevel_page_report-memtership""><a href='admin.php?page=report-memtership' class="" menu-icon-generic toplevel_page_report-memtership"">Membership Report</a></li><li class="" menu-icon-generic toplevel_page_export-payment""><a href='admin.php?page=export-payment' class="" menu-icon-generic toplevel_page_export-payment"">Export Payment Transactions</a></li><li class="" menu-icon-generic toplevel_page_event-participahts-list""><a href='admin.php?page=event-participahts-list' class="" menu-icon-generic toplevel_page_event-participahts-list"">Event Participants List</a></li><li class="" menu-icon-generic toplevel_page_import-user-memtership""><a href='admin.php?page=import-user-memtership' class="" menu-icon-generic toplevel_page_import-user-memtership"">Import Membership</a></li><li class="" menu-icon-generic toplevel_page_import-export-memtership""><a href='admin.php?page=import-export-memtership' class="" menu-icon-generic toplevel_page_import-export-memtership"">Import And Export Membership</a></li><li><a href='edit-tags.php?taxonomy=memberships&amp;post_type=membership-trans'>Memberships</a></li><li><a href='edit-tags.php?taxonomy=collaboration-cat&amp;post_type=pt-member-info'>Collaboration Categories</a></li><li><a href='edit-tags.php?taxonomy=overseas-partner-cat&amp;post_type=pt-member-info'>Overseas partner Categories</a></li><li><a href='edit-tags.php?taxonomy=target-country-cat&amp;post_type=pt-member-info'>Target country Categories</a></li><li><a href='edit-tags.php?taxonomy=area-of-business-cat&amp;post_type=pt-member-info'>Area of Business Categories</a></li><li><a href='edit-tags.php?taxonomy=type-of-organization-cat&amp;post_type=pt-member-info'>Type of Organization Categories</a></li><li><a href='edit-tags.php?taxonomy=capittal-of-business-cat&amp;post_type=pt-member-info'>Capittal of Business Categories</a></li><li><a href='edit-tags.php?taxonomy=number-of-employee-cat&amp;post_type=pt-member-info'>Number of Employee Categories</a></li><li class="" menu-icon-generic toplevel_page_op-title-notification""><a href='admin.php?page=op-title-notification' class="" menu-icon-generic toplevel_page_op-title-notification"">Notification Title</a></li><li><a href='edit.php?post_type=pt-member-info'>Member Information</a></li><li><a href='edit.php?post_type=pt-member-benifit'>Member Benifit</a></li><li><a href='edit.php?post_type=pt-notification'><div class=""ame-submenu-icon""><div class=""ame-fa ame-fa-bell""></div></div>Notification</a></li></ul></li>"																			
+"	<li class=""wp-has-submenu wp-not-current-submenu menu-top ame-has-custom-dashicon ame-has-submenu-icons menu-top-last"">"																			
+"	<a href='admin.php?page=op-logo-yeac' class=""wp-has-submenu wp-not-current-submenu menu-top ame-has-custom-dashicon ame-has-submenu-icons menu-top-last"" aria-haspopup=""true""><div class=""wp-menu-arrow""><div></div></div><div class='wp-menu-image dashicons-before dashicons-marker'><br /></div><div class='wp-menu-name'>Web</div></a>"																			
+"	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Web</li><li class=""wp-first-item  menu-icon-generic toplevel_page_op-logo-yeac""><a href='admin.php?page=op-logo-yeac' class=""wp-first-item  menu-icon-generic toplevel_page_op-logo-yeac"">Yeac Logo</a></li><li><a href='edit.php?post_type=pt-partner-sponser'>Partners &#038; Sponsers</a></li><li class="" menu-icon-generic toplevel_page_op-join-yeac""><a href='admin.php?page=op-join-yeac' class="" menu-icon-generic toplevel_page_op-join-yeac"">Ready to Join Yeac</a></li><li class="" menu-icon-generic toplevel_page_op-home-page""><a href='admin.php?page=op-home-page' class="" menu-icon-generic toplevel_page_op-home-page"">Home</a></li><li><a href='edit.php?post_type=pt-committee&page=acf-options-committee-landing'>Committee Landing</a></li><li><a href='edit-tags.php?taxonomy=committee-cat&amp;post_type=pt-committee'>Committee Categories</a></li><li><a href='edit.php?post_type=pt-announcements&page=acf-options-announcement-landing'>Announcement Landing</a></li><li><a href='edit-tags.php?taxonomy=announcement-cat&amp;post_type=pt-announcements'>Announcement Categories</a></li><li><a href='edit.php?post_type=pt-lates-video&page=acf-options-latest-video-landing'>Latest Video Landing</a></li><li class="" ame-has-custom-dashicon""><a href='edit.php?post_type=pt-lates-video' class="" ame-has-custom-dashicon""><div class=""ame-submenu-icon""><div class=""dashicons dashicons-playlist-video""></div></div>Latest Video</a></li><li class="" ame-has-custom-dashicon""><a href='edit.php?post_type=pt-announcements' class="" ame-has-custom-dashicon""><div class=""ame-submenu-icon""><div class=""dashicons dashicons-megaphone""></div></div>Announcement</a></li><li><a href='edit-tags.php?taxonomy=yeac-chapter-cat&amp;post_type=pt-yeac-chapter'>Yeac Chapter Categories</a></li><li class="" ame-has-custom-dashicon""><a href='edit.php?post_type=pt-committee' class="" ame-has-custom-dashicon""><div class=""ame-submenu-icon""><div class=""dashicons dashicons-groups""></div></div>Committee</a></li><li><a href='edit.php?post_type=pt-member-list&page=acf-options-member-list-landing'>Member List Landing</a></li><li><a href='edit.php?post_type=pt-member-list'>Member List</a></li><li><a href='edit.php?post_type=pt-member-benifit&page=acf-options-member-benifit-landing'>Member Benefit Landing</a></li><li><a href='edit.php?post_type=pt-how-member&page=acf-options-how-to-be-member-landing'>How to be Member Landing</a></li><li><a href='edit.php?post_type=pt-how-member'>How to be Member</a></li></ul></li>"																			
+"	<li class=""wp-not-current-submenu wp-menu-separator"" id=""separator_O7B1L"" aria-hidden=""true""><div class=""separator""></div></li>"																			
+"	<li class=""wp-not-current-submenu menu-top toplevel_page_op-home-page ame-has-custom-dashicon menu-top-first"" id=""toplevel_page_op-home-page"">"																			
+"	<a href='admin.php?page=op-home-page' class=""wp-not-current-submenu menu-top toplevel_page_op-home-page ame-has-custom-dashicon menu-top-first"" ><div class=""wp-menu-arrow""><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-home'><br /></div><div class='wp-menu-name'>Home</div></a></li>"																			
+"	<li class=""wp-has-submenu wp-not-current-submenu menu-top ame-has-custom-dashicon ame-has-submenu-icons"">"																			
+"	<a href='admin.php?page=op-about' class=""wp-has-submenu wp-not-current-submenu menu-top ame-has-custom-dashicon ame-has-submenu-icons"" aria-haspopup=""true""><div class=""wp-menu-arrow""><div></div></div><div class='wp-menu-image dashicons-before dashicons-marker'><br /></div><div class='wp-menu-name'>About US</div></a>"																			
+"	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>About US</li><li class=""wp-first-item  menu-icon-generic toplevel_page_op-about""><a href='admin.php?page=op-about' class=""wp-first-item  menu-icon-generic toplevel_page_op-about"">About Us Landing</a></li><li class="" menu-icon-generic toplevel_page_op-yeac-history""><a href='admin.php?page=op-yeac-history' class="" menu-icon-generic toplevel_page_op-yeac-history"">YEAC History Landing</a></li><li class="" menu-icon-generic toplevel_page_op-org-structure""><a href='admin.php?page=op-org-structure' class="" menu-icon-generic toplevel_page_op-org-structure"">ORG Structure Landing</a></li><li class="" menu-icon-generic toplevel_page_op-who-we""><a href='admin.php?page=op-who-we' class="" menu-icon-generic toplevel_page_op-who-we"">Who We Are Landing</a></li><li class="" menu-icon-generic toplevel_page_op-secretariat-team""><a href='admin.php?page=op-secretariat-team' class="" menu-icon-generic toplevel_page_op-secretariat-team"">Secretariat Team Landing</a></li><li class="" menu-icon-pt-testimonail""><a href='edit.php?post_type=pt-testimonail' class="" menu-icon-pt-testimonail"">Testimonial</a></li><li class="" menu-icon-pt-faq""><a href='edit.php?post_type=pt-faq' class="" menu-icon-pt-faq"">FAQ</a></li><li class="" ame-has-custom-dashicon""><a href='edit.php?post_type=feedback' class="" ame-has-custom-dashicon""><div class=""ame-submenu-icon""><div class=""dashicons dashicons-format-chat""></div></div>Feedback from User</a></li></ul></li>"																			
+"	<li class=""wp-has-submenu wp-not-current-submenu menu-top ame-has-custom-dashicon"">"																			
+"	<a href='admin.php?page=op-our-strategies' class=""wp-has-submenu wp-not-current-submenu menu-top ame-has-custom-dashicon"" aria-haspopup=""true""><div class=""wp-menu-arrow""><div></div></div><div class='wp-menu-image dashicons-before dashicons-marker'><br /></div><div class='wp-menu-name'>OUR Committees</div></a>"																			
+"	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>OUR Committees</li><li class=""wp-first-item  menu-icon-generic toplevel_page_op-our-strategies""><a href='admin.php?page=op-our-strategies' class=""wp-first-item  menu-icon-generic toplevel_page_op-our-strategies"">Our Strategies Landing</a></li><li class="" menu-icon-generic toplevel_page_op-our-commission""><a href='admin.php?page=op-our-commission' class="" menu-icon-generic toplevel_page_op-our-commission"">Our Commission Landing</a></li><li class="" menu-icon-generic toplevel_page_op-our-committee""><a href='admin.php?page=op-our-committee' class="" menu-icon-generic toplevel_page_op-our-committee"">Our Committee Landing</a></li></ul></li>"																			
+"	<li class=""wp-has-submenu wp-not-current-submenu menu-top ame-has-custom-dashicon"">"																			
+"	<a href='admin.php?page=op-member' class=""wp-has-submenu wp-not-current-submenu menu-top ame-has-custom-dashicon"" aria-haspopup=""true""><div class=""wp-menu-arrow""><div></div></div><div class='wp-menu-image dashicons-before dashicons-marker'><br /></div><div class='wp-menu-name'>Member</div></a>"																			
+"	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Member</li><li class=""wp-first-item  menu-icon-generic toplevel_page_op-member""><a href='admin.php?page=op-member' class=""wp-first-item  menu-icon-generic toplevel_page_op-member"">Member Landing</a></li><li class="" menu-icon-generic toplevel_page_op-how-to-be-member""><a href='admin.php?page=op-how-to-be-member' class="" menu-icon-generic toplevel_page_op-how-to-be-member"">How to be Member Landing</a></li><li class="" menu-icon-generic toplevel_page_op-member-list""><a href='admin.php?page=op-member-list' class="" menu-icon-generic toplevel_page_op-member-list"">Member List Landing</a></li></ul></li>"																			
+"	<li class=""wp-has-submenu wp-not-current-submenu menu-top ame-unclickable-menu-item ame-has-custom-dashicon menu-top-last"">"																			
+"	<a href='edit.php?post_type=pt-media&page=acf-options-media-contact-landing' class=""wp-has-submenu wp-not-current-submenu menu-top ame-unclickable-menu-item ame-has-custom-dashicon menu-top-last"" aria-haspopup=""true""><div class=""wp-menu-arrow""><div></div></div><div class='wp-menu-image dashicons-before dashicons-marker'><br /></div><div class='wp-menu-name'>Media</div></a>"																			
+"	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Media</li><li class=""wp-first-item""><a href='edit.php?post_type=pt-media&page=acf-options-media-contact-landing' class=""wp-first-item"">Media Landing</a></li><li><a href='edit.php?post_type=pt-media'>Media Contact</a></li><li><a href='edit.php?post_type=pt-media-coverage'>Media Coverage</a></li><li><a href='edit.php?post_type=pt-media-coverage&page=acf-options-media-coverage-landing'>Media Coverage Landing</a></li><li><a href='admin.php?page=op-media-gellary'>Media Gallery</a></li></ul></li>"																			
+"	<li class=""wp-not-current-submenu wp-menu-separator"" aria-hidden=""true""><div class=""separator""></div></li>"																			
+"	<li class=""wp-has-submenu wp-not-current-submenu menu-top menu-icon-post open-if-no-js menu-top-first"" id=""menu-posts"">"																			
+"	<a href='edit.php' class=""wp-has-submenu wp-not-current-submenu menu-top menu-icon-post open-if-no-js menu-top-first"" aria-haspopup=""true""><div class=""wp-menu-arrow""><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-post'><br /></div><div class='wp-menu-name'>Posts</div></a>"																			
+"	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Posts</li><li class=""wp-first-item""><a href='edit.php' class=""wp-first-item"">All Posts</a></li><li><a href='post-new.php'>Add New</a></li><li><a href='edit-tags.php?taxonomy=category'>Categories</a></li><li><a href='edit-tags.php?taxonomy=post_tag'>Tags</a></li></ul></li>"																			
+"	<li class=""wp-has-submenu wp-not-current-submenu menu-top menu-icon-media"" id=""menu-media"">"																			
+"	<a href='upload.php' class=""wp-has-submenu wp-not-current-submenu menu-top menu-icon-media"" aria-haspopup=""true""><div class=""wp-menu-arrow""><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-media'><br /></div><div class='wp-menu-name'>Media</div></a>"																			
+"	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Media</li><li class=""wp-first-item""><a href='upload.php' class=""wp-first-item"">Library</a></li><li><a href='media-new.php'>Add New</a></li><li><a href='upload.php?page=imagify-bulk-optimization'>Bulk Optimization</a></li><li><a href='upload.php?page=imagify-files'>Other Media</a></li></ul></li>"																			
+"	<li class=""wp-has-submenu wp-not-current-submenu menu-top menu-icon-page menu-top-last"" id=""menu-pages"">"																			
+"	<a href='edit.php?post_type=page' class=""wp-has-submenu wp-not-current-submenu menu-top menu-icon-page menu-top-last"" aria-haspopup=""true""><div class=""wp-menu-arrow""><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-page'><br /></div><div class='wp-menu-name'>Pages</div></a>"																			
+"	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Pages</li><li class=""wp-first-item""><a href='edit.php?post_type=page' class=""wp-first-item"">All Pages</a></li><li><a href='post-new.php?post_type=page'>Add New</a></li></ul></li>"																			
+"	<li class=""wp-not-current-submenu wp-menu-separator"" aria-hidden=""true""><div class=""separator""></div></li>"																			
+"	<li class=""wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first"" id=""menu-appearance"">"																			
+"	<a href='themes.php' class=""wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first"" aria-haspopup=""true""><div class=""wp-menu-arrow""><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-appearance'><br /></div><div class='wp-menu-name'>Appearance</div></a>"																			
+"	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Appearance</li><li class=""wp-first-item""><a href='themes.php' class=""wp-first-item"">Themes</a></li><li class=""hide-if-no-customize""><a href='customize.php?return=%2Fwp-admin%2Fadmin.php%3Fpage%3Dexport-payment' class=""hide-if-no-customize"">Customize</a></li><li><a href='nav-menus.php'>Menus</a></li></ul></li>"																			
+"	<li class=""wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins"" id=""menu-plugins"">"																			
+"	<a href='plugins.php' class=""wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins"" aria-haspopup=""true""><div class=""wp-menu-arrow""><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-plugins'><br /></div><div class='wp-menu-name'>Plugins <span class=""update-plugins count-13""><span class=""plugin-count"">13</span></span></div></a>"																			
+"	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Plugins <span class=""update-plugins count-13""><span class=""plugin-count"">13</span></span></li><li class=""wp-first-item""><a href='plugins.php' class=""wp-first-item"">Installed Plugins</a></li><li><a href='plugin-install.php'>Add New</a></li></ul></li>"																			
+"	<li class=""wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools"" id=""menu-tools"">"																			
+"	<a href='tools.php' class=""wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools"" aria-haspopup=""true""><div class=""wp-menu-arrow""><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-tools'><br /></div><div class='wp-menu-name'>Tools</div></a>"																			
+"	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Tools</li><li class=""wp-first-item""><a href='tools.php' class=""wp-first-item"">Available Tools</a></li><li><a href='import.php'>Import</a></li><li><a href='export.php'>Export</a></li><li><a href='site-health.php'>Site Health</a></li><li><a href='export-personal-data.php'>Export Personal Data</a></li><li><a href='erase-personal-data.php'>Erase Personal Data</a></li><li><a href='tools.php?page=acui'>Import and export users and customers</a></li></ul></li>"																			
+"	<li class=""wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings"" id=""menu-settings"">"																			
+"	<a href='options-general.php' class=""wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings"" aria-haspopup=""true""><div class=""wp-menu-arrow""><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-settings'><br /></div><div class='wp-menu-name'>Settings<span class='update-plugins rsssl-update-count'><span class='update-count'>1</span></span></div></a>"																			
+"	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Settings<span class='update-plugins rsssl-update-count'><span class='update-count'>1</span></span></li><li class=""wp-first-item""><a href='options-general.php' class=""wp-first-item"">General</a></li><li><a href='options-writing.php'>Writing</a></li><li><a href='options-reading.php'>Reading</a></li><li><a href='options-discussion.php'>Discussion</a></li><li><a href='options-media.php'>Media</a></li><li><a href='options-permalink.php'>Permalinks</a></li><li><a href='options-privacy.php'>Privacy</a></li><li><a href='options-general.php?page=facebook-messenger-customer-chat'>Facebook Chat</a></li><li><a href='options-general.php?page=acf-qtranslate'>ACF qTranslate</a></li><li><a href='options-general.php?page=imagify'>Imagify</a></li><li><a href='options-general.php?page=whl_settings'>WPS Hide Login</a></li><li><a href='options-general.php?page=codepress-admin-columns'>Admin Columns</a></li><li><a href='options-general.php?page=rlrsssl_really_simple_ssl'>SSL<span class='update-plugins rsssl-update-count'><span class='update-count'>1</span></span></a></li><li><a href='options-general.php?page=qtranslate-xt'>Languages</a></li><li><a href='options-general.php?page=menu_editor'>Menu Editor Pro</a></li></ul></li>"																			
+"	<li class=""wp-has-submenu wp-not-current-submenu menu-top toplevel_page_edit?post_type=acf-field-group menu-top-last"" id=""toplevel_page_edit-post_type-acf-field-group"">"																			
+"	<a href='edit.php?post_type=acf-field-group' class=""wp-has-submenu wp-not-current-submenu menu-top toplevel_page_edit?post_type=acf-field-group menu-top-last"" aria-haspopup=""true""><div class=""wp-menu-arrow""><div></div></div><div class='wp-menu-image dashicons-before dashicons-welcome-widgets-menus'><br /></div><div class='wp-menu-name'>Custom Fields</div></a>"																			
+"	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>Custom Fields</li><li class=""wp-first-item""><a href='edit.php?post_type=acf-field-group' class=""wp-first-item"">Field Groups</a></li><li><a href='post-new.php?post_type=acf-field-group'>Add New</a></li><li><a href='edit.php?post_type=acf-field-group&#038;page=acf-tools'>Tools</a></li><li><a href='edit.php?post_type=acf-field-group&#038;page=acf-settings-updates'>Updates</a></li></ul></li>"																			
+"	<li class=""wp-not-current-submenu wp-menu-separator"" aria-hidden=""true""><div class=""separator""></div></li>"																			
+"	<li class=""wp-not-current-submenu menu-top toplevel_page_biz-recaptcha menu-top-first"" id=""toplevel_page_biz-recaptcha"">"																			
+"	<a href='admin.php?page=biz-recaptcha' class=""wp-not-current-submenu menu-top toplevel_page_biz-recaptcha menu-top-first"" ><div class=""wp-menu-arrow""><div></div></div><div class='wp-menu-image dashicons-before dashicons-update'><br /></div><div class='wp-menu-name'>Biz reCAPTCHA</div></a></li>"																			
+"	<li class=""wp-not-current-submenu menu-top toplevel_page_op-maintenance ame-has-custom-dashicon menu-top-last"" id=""toplevel_page_op-maintenance"">"																			
+"	<a href='admin.php?page=op-maintenance' class=""wp-not-current-submenu menu-top toplevel_page_op-maintenance ame-has-custom-dashicon menu-top-last"" ><div class=""wp-menu-arrow""><div></div></div><div class='wp-menu-image dashicons-before dashicons-hammer'><br /></div><div class='wp-menu-name'>Maintenance</div></a></li><li id=""collapse-menu"" class=""hide-if-no-js""><button type=""button"" id=""collapse-button"" aria-label=""Collapse Main menu"" aria-expanded=""true""><span class=""collapse-button-icon"" aria-hidden=""true""></span><span class=""collapse-button-label"">Collapse menu</span></button></li></ul>"																			
+</div>																			
+</div>																			
+<div id="wpcontent">																			
+																			
+"		<div id=""wpadminbar"" class=""nojq nojs"">"																			
+"						<div class=""quicklinks"" id=""wp-toolbar"" role=""navigation"" aria-label=""Toolbar"">"																			
+"				<ul id='wp-admin-bar-root-default' class=""ab-top-menu""><li id='wp-admin-bar-menu-toggle'><a class='ab-item' href='#'><span class=""ab-icon""></span><span class=""screen-reader-text"">Menu</span></a></li><li id='wp-admin-bar-wp-logo' class=""menupop""><a class='ab-item' aria-haspopup=""true"" href='https://staging.yeacambodia.org/wp-admin/about.php'><span class=""ab-icon""></span><span class=""screen-reader-text"">About WordPress</span></a><div class=""ab-sub-wrapper""><ul id='wp-admin-bar-wp-logo-default' class=""ab-submenu""><li id='wp-admin-bar-about'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/about.php'>About WordPress</a></li></ul><ul id='wp-admin-bar-wp-logo-external' class=""ab-sub-secondary ab-submenu""><li id='wp-admin-bar-wporg'><a class='ab-item' href='https://wordpress.org/'>WordPress.org</a></li><li id='wp-admin-bar-documentation'><a class='ab-item' href='https://codex.wordpress.org/'>Documentation</a></li><li id='wp-admin-bar-support-forums'><a class='ab-item' href='https://wordpress.org/support/'>Support</a></li><li id='wp-admin-bar-feedback'><a class='ab-item' href='https://wordpress.org/support/forum/requests-and-feedback'>Feedback</a></li></ul></div></li><li id='wp-admin-bar-site-name' class=""menupop""><a class='ab-item' aria-haspopup=""true"" href='https://staging.yeacambodia.org/'>Yeacambodia</a><div class=""ab-sub-wrapper""><ul id='wp-admin-bar-site-name-default' class=""ab-submenu""><li id='wp-admin-bar-view-site'><a class='ab-item' href='https://staging.yeacambodia.org/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-updates'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/update-core.php' title='1 WordPress Update"	 13 Plugin Updates	 Translation Updates'><span class="ab-icon"></span><span class="ab-label">15</span><span class="screen-reader-text">1 WordPress Update	 13 Plugin Updates	 Translation Updates</span></a></li><li id='wp-admin-bar-comments'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/edit-comments.php'><span class="ab-icon"></span><span class="ab-label awaiting-mod pending-count count-0" aria-hidden="true">0</span><span class="screen-reader-text comments-in-moderation-text">0 Comments in moderation</span></a></li><li id='wp-admin-bar-new-content' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://staging.yeacambodia.org/wp-admin/post-new.php'><span class="ab-icon"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-new-content-default' class="ab-submenu"><li id='wp-admin-bar-new-post'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php'>Post</a></li><li id='wp-admin-bar-new-media'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/media-new.php'>Media</a></li><li id='wp-admin-bar-new-page'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=page'>Page</a></li><li id='wp-admin-bar-new-membership-trans'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=membership-trans'>Membership Transaction</a></li><li id='wp-admin-bar-new-payment-trans'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=payment-trans'>Payment Transaction</a></li><li id='wp-admin-bar-new-event-trans'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=event-trans'>Event Transaction</a></li><li id='wp-admin-bar-new-feedback'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=feedback'>feedback</a></li><li id='wp-admin-bar-new-feedback-from-app'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=feedback-from-app'>feedbacks from user app</a></li><li id='wp-admin-bar-new-partner-sponser-app'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=partner-sponser-app'>partner sponser app</a></li><li id='wp-admin-bar-new-pt-promotion'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-promotion'>promotion</a></li><li id='wp-admin-bar-new-pt-network'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-network'>network</a></li><li id='wp-admin-bar-new-pt-lates-video'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-lates-video'>latest video</a></li><li id='wp-admin-bar-new-pt-media'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-media'>media contact</a></li><li id='wp-admin-bar-new-pt-media-coverage'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-media-coverage'>media coverage</a></li><li id='wp-admin-bar-new-pt-how-member'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-how-member'>how to be member</a></li><li id='wp-admin-bar-new-pt-member-benifit'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-member-benifit'>member benifit</a></li><li id='wp-admin-bar-new-pt-member-list'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-member-list'>member list</a></li><li id='wp-admin-bar-new-pt-history'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-history'>history</a></li><li id='wp-admin-bar-new-pt-secretariat-team'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-secretariat-team'>secretariat team</a></li><li id='wp-admin-bar-new-pt-testimonail'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-testimonail'>testimonial</a></li><li id='wp-admin-bar-new-pt-faq'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-faq'>faq</a></li><li id='wp-admin-bar-new-pt-news-events'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-news-events'>news & event</a></li><li id='wp-admin-bar-new-pt-partner-sponser'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-partner-sponser'>partner sponser</a></li><li id='wp-admin-bar-new-pt-contact-us'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-contact-us'>contact us</a></li><li id='wp-admin-bar-new-pt-library'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-library'>library</a></li><li id='wp-admin-bar-new-pt-yeac-chapter'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-yeac-chapter'>yeac chapter</a></li><li id='wp-admin-bar-new-pt-announcements'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-announcements'>announcement</a></li><li id='wp-admin-bar-new-pt-committee'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-committee'>committee</a></li><li id='wp-admin-bar-new-pt-member-info'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-member-info'>member information</a></li><li id='wp-admin-bar-new-pt-notification'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/post-new.php?post_type=pt-notification'>notification</a></li><li id='wp-admin-bar-new-user'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/user-new.php'>User</a></li></ul></div></li><li id='wp-admin-bar-imagify' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://staging.yeacambodia.org/wp-admin/options-general.php?page=imagify'>Imagify</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-imagify-default' class="ab-submenu"><li id='wp-admin-bar-imagify-settings'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/options-general.php?page=imagify'>Settings</a></li><li id='wp-admin-bar-imagify-bulk-optimization'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/upload.php?page=imagify-bulk-optimization'>Bulk Optimization</a></li><li id='wp-admin-bar-imagify-documentation'><a class='ab-item' href='https://imagify.io/documentation/' target='_blank'>Documentation</a></li><li id='wp-admin-bar-imagify-rate-it'><a class='ab-item' href='https://wordpress.org/support/view/plugin-reviews/imagify?rate=5#postform' target='_blank'>Rate Imagify on WordPress.org</a></li><li id='wp-admin-bar-imagify-profile'><div class="ab-item ab-empty-item"><input type="hidden" id="imagifygetadminbarprofilenonce" name="imagifygetadminbarprofilenonce" value="c90b78a0b6" /><div id="wp-admin-bar-imagify-profile-loading" class="hide-if-no-js">Loading...</div><div id="wp-admin-bar-imagify-profile-content" class="hide-if-no-js"></div></div></li></ul></div></li></ul><ul id='wp-admin-bar-top-secondary' class="ab-top-secondary ab-top-menu"><li id='wp-admin-bar-my-account' class="menupop with-avatar"><a class='ab-item' aria-haspopup="true" href='https://staging.yeacambodia.org/wp-admin/profile.php'>Welcome	" <span class=""display-name"">webadmin@biz</span><img alt='' src='https://secure.gravatar.com/avatar/e113a22351d42b416b5b3c580e2961cf?s=26&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/e113a22351d42b416b5b3c580e2961cf?s=52&#038;d=mm&#038;r=g 2x' class='avatar avatar-26 photo' height='26' width='26' loading='lazy'/></a><div class=""ab-sub-wrapper""><ul id='wp-admin-bar-user-actions' class=""ab-submenu""><li id='wp-admin-bar-user-info'><a class='ab-item' tabindex=""-1"" href='https://staging.yeacambodia.org/wp-admin/profile.php'><img alt='' src='https://secure.gravatar.com/avatar/e113a22351d42b416b5b3c580e2961cf?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/e113a22351d42b416b5b3c580e2961cf?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo' height='64' width='64' loading='lazy'/><span class='display-name'>webadmin@biz</span></a></li><li id='wp-admin-bar-edit-profile'><a class='ab-item' href='https://staging.yeacambodia.org/wp-admin/profile.php'>Edit Profile</a></li><li id='wp-admin-bar-logout'><a class='ab-item' href='https://staging.yeacambodia.org/yeacambodia-admin/?action=logout&#038;_wpnonce=95f9872cfe'>Log Out</a></li></ul></div></li><li id='wp-admin-bar-language' class=""menupop""><div class=""ab-item ab-empty-item"" aria-haspopup=""true"">English</div><div class=""ab-sub-wrapper""><ul id='wp-admin-bar-language-default' class=""ab-submenu""><li id='wp-admin-bar-en'><a class='ab-item' href='/wp-admin/admin.php?page=export-payment&#038;lang=en'>English</a></li><li id='wp-admin-bar-kh'><a class='ab-item' href='/wp-admin/admin.php?page=export-payment&#038;lang=kh'>khmer</a></li></ul></div></li></ul>			</div>"														
+"						<a class=""screen-reader-shortcut"" href=""https://staging.yeacambodia.org/yeacambodia-admin/?action=logout&#038;_wpnonce=95f9872cfe"">Log Out</a>"																			
+"					</div>"																			
+																			
+"				<script type=""text/javascript"">"																			
+"		(function($){"																			
+"			$('#adminmenu span.ws-new-window-please"	 #ozhmenu span.ws-new-window-please').each(function(){																		
+"				var marker = $(this);"																			
+"				//Add target=""_blank"" to the enclosing link"																			
+"				marker.parents('a').first().attr('target'"	 '_blank');																		
+"				//And to the menu image link"	 too (only for top-level menus)																		
+"				marker.parent().parent().find('> .wp-menu-image a').attr('target'"	 '_blank');																		
+"				//Get rid of the marker"																			
+"				marker.remove();"																			
+"			});"																			
+"			"																			
+"					})(jQuery);"																			
+"		</script>"																			
+"		"																			
+<div id="wpbody" role="main">																			
+																			
+<div id="wpbody-content">																			
+"		<div id=""screen-meta"" class=""metabox-prefs"">"																			
+																			
+"			<div id=""contextual-help-wrap"" class=""hidden no-sidebar"" tabindex=""-1"" aria-label=""Contextual Help Tab"">"																			
+"				<div id=""contextual-help-back""></div>"																			
+"				<div id=""contextual-help-columns"">"																			
+"					<div class=""contextual-help-tabs"">"																			
+"						<ul>"																			
+"												</ul>"																			
+"					</div>"																			
+																			
+"					"																			
+"					<div class=""contextual-help-tabs-wrap"">"																			
+"											</div>"																			
+"				</div>"																			
+"			</div>"																			
+"				</div>"																			
+"		<div class='update-nag notice notice-warning inline'><a href=""https://wordpress.org/support/wordpress-version/version-6-1-1/"">WordPress 6.1.1</a> is available! <a href=""https://staging.yeacambodia.org/wp-admin/update-core.php"" aria-label=""Please update WordPress now"">Please update now</a>.</div><h1 class = ""text-center"">Export Payment Transaction</h1>    "																			
+    																			
+    <div class="acf-meta-box-wrap -grid mt-3">																			
+"		<div id=""normal-sortables"" class=""meta-box-sortables""><div id=""acf-admin-tool-export"" class=""postbox p-2"">"																			
+<div class="postbox-header"><h2 class="hndle">Export Payment</h2>																			
+<div class="handle-actions hide-if-no-js"><button type="button" class="handle-order-higher" aria-disabled="false" aria-describedby="acf-admin-tool-export-handle-order-higher-description"><span class="screen-reader-text">Move up</span><span class="order-higher-indicator" aria-hidden="true"></span></button><span class="hidden" id="acf-admin-tool-export-handle-order-higher-description">Move Export Field Groups box up</span><button type="button" class="handle-order-lower" aria-disabled="false" aria-describedby="acf-admin-tool-export-handle-order-lower-description"><span class="screen-reader-text">Move down</span><span class="order-lower-indicator" aria-hidden="true"></span></button><span class="hidden" id="acf-admin-tool-export-handle-order-lower-description">Move Export Field Groups box down</span><button type="button" class="handlediv" aria-expanded="true"><span class="screen-reader-text">Toggle panel: Export Field Groups</span><span class="toggle-indicator" aria-hidden="true"></span></button></div></div><div class="inside">																			
+"		<form method=""post"" >"																			
+"			<p>Use for export payment transaction list to csv file</p>"																			
+            <div class="d-flex align-items-center">																			
+                <input type="date" name='start_date'> <label for="" class="pt-1">&nbsp; To &nbsp;</label> <input type="date" name="end_date">																			
+            </div>																			
+"		<p class=""acf-submit mt-2"">"																			
+"			<button type=""submit"" name=""export_payment"" class=""button button-primary"" value=""download"">Export File</button>"																			
+"		</p>"																			
+"			<input type=""hidden"" name=""_acf_nonce"" value=""c6c6f70943"">		</form>"																			
+"		</div>"																			
+</div>																			
+																			
+  </form>																			
+"		</div>"																			
+</div>																			
+"</div>	"																			
+"	</div>"																			
+  																			
+    																			
+    																			
+<div class="clear"></div></div><!-- wpbody-content -->																			
+<div class="clear"></div></div><!-- wpbody -->																			
+<div class="clear"></div></div><!-- wpcontent -->																			
+																			
+<div id="wpfooter" role="contentinfo">																			
+"		<p id=""footer-left"" class=""alignleft"">"																			
+"		"																			
+"		<a href=""#?TB_iframe=true&width=1000&height=550"" class=""thickbox"">Guide Book</a>"																			
+        | <a href="https://www.google.com/analytics/web/?hl=en" target="_blank">Google Analytics</a>																			
+"	 [V5.5.11]	</p>"																			
+"	<p id=""footer-upgrade"" class=""alignright"">"																			
+"		"																			
+"		Developed by: <a href=""http://bizsolution.biz"" target=""_blank"">"																			
+"			<img src=""https://staging.yeacambodia.org/cdn/plugins/images/bizsolution.svg"" height=""16px""/>"																			
+"		</a>"																			
+"		</p>"																			
+"	<div class=""clear""></div>"																			
+</div>																			
+        <script type="text/javascript">																			
+            (function ($) {																			
+                var anchors = {																			
+                    '#post-body-content': 'prepend'																			
+                    '#widgets-right': 'before'																			
+                    '#posts-filter': 'prepend'																			
+                    '#wpbody-content h1': 'after'																			
+                    '#wpbody-content': 'prepend'																			
+                };																			
+                $.each(anchors	 function (anchor	 fn) {																	
+                    var $anchor = $(anchor);																			
+                    if ($anchor.length) {																			
+                        $anchor[fn]('<span id="acf-qtranslate-lsb-shim" style="display:none">[:en]LSB[:]</span>');																			
+                        return false;																			
+                    }																			
+                });																			
+            })(jQuery);																			
+        </script>																			
+"		"																			
+"			<script>"																			
+"				jQuery(document).ready(function($) {"																			
+"					$('#wrm-review-link-wrm_1e278f4992d8bb3f1f0b').on('click'"	 wrmDismiss);																		
+"					function wrmDismiss() {"																			
+																			
+"						var data = {"																			
+"							action: 'wrm_clicked_review'"																			
+"							id: 'wrm-review-link-wrm_1e278f4992d8bb3f1f0b'"																			
+"						};"																			
+																			
+"						jQuery.ajax({"																			
+"							type:'POST'"																			
+"							url: ajaxurl"																			
+"							data: data"																			
+"							success:function( data ){"																			
+"								console.log(data);"																			
+"							}"																			
+"						});"																			
+																			
+"					}"																			
+"				});"																			
+"			</script>"																			
+																			
+"		    <script type=""text/javascript"">"																			
+        // <![CDATA[																			
+"		var qTranslateConfig={""default_language"":""en"""	language:"en"	url_mode:2	hide_default_language:true	lsb_style_subitem:"button"	lsb_style_active_class:"active"	lsb_style_wrap_class:""	custom_fields:[]	custom_field_classes:[]	homeinfo_path:"\/"	home_url_path:"\/"	flag_location:"https:\/\/staging.yeacambodia.org\/cdn\/plugins\/qtranslate-xt-master\/flags\/"	js:[]	strings:{"ShowIn":"Show multilingual content in "}	language_config:{"en":{"flag":"gb.png"	name:"English"	locale:"en_US"	locale_html:"en"	admin_name:"American English"}	kh:{"flag":"kh.png"
+        //]]>																			
+    </script>																			
+"		<div id=""wp-auth-check-wrap"" class=""hidden"">"																			
+"	<div id=""wp-auth-check-bg""></div>"																			
+"	<div id=""wp-auth-check"">"																			
+"	<button type=""button"" class=""wp-auth-check-close button-link""><span class=""screen-reader-text"">Close dialog</span></button>"																			
+"			<div id=""wp-auth-check-form"" class=""loading"" data-src=""https://staging.yeacambodia.org/yeacambodia-admin/?interim-login=1&#038;wp_lang=en_US""></div>"																			
+"			<div class=""wp-auth-fallback"">"																			
+"		<p><b class=""wp-auth-fallback-expired"" tabindex=""0"">Session expired</b></p>"																			
+"		<p><a href=""https://staging.yeacambodia.org/yeacambodia-admin/"" target=""_blank"">Please log in again.</a>"																			
+"		The login page will open in a new tab. After logging in you can close it and return to this page.</p>"																			
+"	</div>"																			
+"	</div>"																			
+"	</div>"																			
+"	<link rel='stylesheet' id='qtranslate-admin-style-css'  href='https://staging.yeacambodia.org/cdn/plugins/qtranslate-xt-master/admin/css/qtranslate_configuration.css?ver=3.6.3' media='all' />"																			
+<link rel='stylesheet' id='thickbox-css'  href='https://staging.yeacambodia.org/wp-includes/js/thickbox/thickbox.css?ver=5.5.11' media='all' />																			
+<link rel='stylesheet' id='admin_styles-css'  href='https://staging.yeacambodia.org/cdn/plugins/bizbuilder/assets/css/admin.css?ver=5.5.11' media='all' />																			
+<link rel='stylesheet' id='bootstrap_styles-css'  href='https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css?ver=5.5.11' media='all' />																			
+<script type='text/javascript' src='https://staging.yeacambodia.org/wp-admin/load-scripts.php?c=1&amp;load%5Bchunk_0%5D=hoverIntent&amp;ver=5.5.11'></script>																			
+<script src='https://www.google.com/recaptcha/api.js?ver=5.5.11' id='biz_recaptcha-js'></script>																			
+<script src='https://staging.yeacambodia.org/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4' id='wp-polyfill-js'></script>																			
+<script id='wp-polyfill-js-after'>																			
+( 'fetch' in window ) || document.write( '<script src="https://staging.yeacambodia.org/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://staging.yeacambodia.org/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://staging.yeacambodia.org/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://staging.yeacambodia.org/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://staging.yeacambodia.org/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://staging.yeacambodia.org/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );																			
+</script>																			
+<script src='https://staging.yeacambodia.org/wp-includes/js/dist/i18n.min.js?ver=4ab02c8fd541b8cfb8952fe260d21f16' id='wp-i18n-js'></script>																			
+<script id='common-js-translations'>																			
+( function( domain	 translations ) {																		
+"	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;"																			
+"	localeData[""""].domain = domain;"																			
+"	wp.i18n.setLocaleData( localeData"	 domain );																		
+} )( "default"	 { "locale_data": { "messages": { "": {} } } } );																		
+</script>																			
+<script src='https://staging.yeacambodia.org/wp-admin/js/common.min.js?ver=5.5.11' id='common-js'></script>																			
+<script src='https://staging.yeacambodia.org/wp-includes/js/hoverintent-js.min.js?ver=2.2.1' id='hoverintent-js-js'></script>																			
+<script src='https://staging.yeacambodia.org/wp-includes/js/admin-bar.min.js?ver=5.5.11' id='admin-bar-js'></script>																			
+<script src='https://staging.yeacambodia.org/wp-admin/js/svg-painter.js?ver=5.5.11' id='svg-painter-js'></script>																			
+<script src='https://staging.yeacambodia.org/wp-includes/js/dist/hooks.min.js?ver=63769290dead574c40a54748f22ada71' id='wp-hooks-js'></script>																			
+<script id='heartbeat-js-extra'>																			
+var heartbeatSettings = {"nonce":"1339c65526"};																			
+</script>																			
+<script src='https://staging.yeacambodia.org/wp-includes/js/heartbeat.min.js?ver=5.5.11' id='heartbeat-js'></script>																			
+<script id='wp-auth-check-js-translations'>																			
+( function( domain	 translations ) {																		
+"	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;"																			
+"	localeData[""""].domain = domain;"																			
+"	wp.i18n.setLocaleData( localeData"	 domain );																		
+} )( "default"	 { "locale_data": { "messages": { "": {} } } } );																		
+</script>																			
+<script src='https://staging.yeacambodia.org/wp-includes/js/wp-auth-check.min.js?ver=5.5.11' id='wp-auth-check-js'></script>																			
+<script src='https://staging.yeacambodia.org/cdn/plugins/admin-menu-editor-pro/js/menu-highlight-fix.js?ver=1675501485' id='ame-menu-fix-js'></script>																			
+<script id='dismissible-notices-js-extra'>																			
+var dismissible_notice = {"nonce":"ef7581cadd"};																			
+</script>																			
+<script src='https://staging.yeacambodia.org/cdn/plugins/facebook-messenger-customer-chat/assets/js/dismiss-notice.js?ver=5.5.11' id='dismissible-notices-js'></script>																			
+<script src='https://staging.yeacambodia.org/cdn/plugins/imagify/assets/js/admin-bar.min.js?ver=1.9.13' id='imagify-admin-bar-js'></script>																			
+<script src='https://staging.yeacambodia.org/cdn/plugins/wps-hide-login/vendor/NicolasKulka/wp-dismissible-notices-handler/assets/js/main.js?ver=1.1' id='dnh-js'></script>																			
+<script id='thickbox-js-extra'>																			
+var thickboxL10n = {"next":"Next >"	prev:"< Prev"	image:"Image"	of:"of"	close:"Close"	noiframes:"This feature requires inline frames. You have iframes disabled or your browser does not support them."	loadingAnimation:"https:\/\/staging.yeacambodia.org\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};													
+</script>																			
+<script src='https://staging.yeacambodia.org/wp-includes/js/thickbox/thickbox.js?ver=3.1-20121105' id='thickbox-js'></script>																			
+<script src='https://staging.yeacambodia.org/cdn/plugins/qtranslate-xt-master/admin/js/common.min.js?ver=3.6.3' id='qtranslate-admin-common-js'></script>																			
+																			
+<div class="clear"></div></div><!-- wpwrap -->																			
+<script type="text/javascript">if(typeof wpOnload=='function')wpOnload();</script>																			
+</body>																			
+</html>																			

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>for in loop</h2>
+    <p id="demo"></p>
+    <script>
+        const number=[12,34,5,34,56,43,234,32];
+        let text="";
+        for(let x in number){
+            text+=number[x]+ " ";
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

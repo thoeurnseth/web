@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.col-3{
+    margin-top: 30px;
+}
+.content{
+    margin-top: 10px;
+}
+.box{
+    background-color: red;
+    height: 200px;
+}

@@ -1,0 +1,180 @@
+:root{
+    --color-black:black;
+    --color-red:red;
+}
+/* *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: azure;
+}
+.container{
+    width: 100%;
+}
+.header{
+    width: 100%;
+    height: 150px;
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: space-between;
+}
+.head-left{
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+}
+.img{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.img img{
+    width: 20%;
+}
+.head-right{
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+}
+.ads{
+    text-align: center;
+    justify-content: center;
+    margin-top: 28px;
+}
+.ads img{
+    width:55%;
+} */
+
+.header {
+    background-color: var(--color-black);
+}
+.full{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.head-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.menu{
+    width: 100%;
+    background-color: red;
+    display: flex;
+}
+.menu ul li{
+    float: left;
+    list-style: none;
+}
+.menu ul li a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-family: Battambang;
+}
+.menu ul li a:hover{
+    opacity: 0.7;
+}
+/*
+.content{
+    width: 100%;
+    height: 400px;
+    padding: 5px 0px;
+}
+.top{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.box-left{
+    width: 66%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.box{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.img{
+    width: 100%;
+    position: relative;
+}
+.img img{
+    width: 100%;
+    position:absolute;
+    overflow: hidden;
+}
+.descrip-title{
+    width: 100%;
+    position:absolute ;
+    float: left;
+    color: black;
+    overflow: hidden;
+    display: block;
+}
+.title span{
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Batangbang;
+    margin: 2px 5px;
+}
+.descrip h2{
+    width: 100%;
+    color: #333;
+    font-size: 18px;
+    font-family: Batambang;
+}
+
+
+
+
+
+.box1{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box-right{
+    width: 33%;
+    height: 100%;
+    overflow: hidden;
+}
+.box2{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.bottom{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+*/
+.box{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    background-color: red;
+}

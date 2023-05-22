@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.content{
+    margin-top: 10px;
+}
+.box{
+    background-color: red;
+    height: 100px;
+}
+.box1{
+    background-color: aqua;
+    height: 200px;
+}

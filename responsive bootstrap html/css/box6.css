@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    margin-top: 30px;
+}
+.box{
+    background-color: red;
+    height: 200px;
+}
+
+/* @desktop size */
+/* @media (min-width: 1200px) {
+   
+}
+/* @Ipad pro size */
+/* @media (min-width: 992px) and (max-width: 1199px) {
+ 
+} */
+
+/* @Ipad size */
+/* @media (min-width: 768px) and (max-width: 991px) {
+
+} */
+
+/* @mobile size */
+/* @media (max-width: 575px) {
+  
+}  */

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-6">
+                    <p class="" style="display: flex;justify-content: space-between;">
+                        <label for="account_first_name"><b>'. esc_html( 'First name', 'woocommerce').'</b></label>
+                        <input 
+                        type="text" 
+                        class="woocommerce-Input woocommerce-Input--text input-text" 
+                        name="first_name" 
+                        id="reg_first_name" 
+                        autocomplete="first_name" 
+                        placeholder=""
+                        value="' . (isset($_POST['first_name']) ? $first_name : null) . '" />
+                    </p>
+                </div>
+                <div class="col-6">
+                    <p class=""style="display: flex;justify-content: space-between;">
+                        <label for="account_last_name"><b>'.esc_html( 'Last name', 'woocommerce' ).'</b></label>
+                        <input 
+                        type="text" 
+                        class="woocommerce-Input woocommerce-Input--text input-text" 
+                        name="last_name" 
+                        id="reg_last_name" 
+                        autocomplete="last_name" 
+                        placeholder=""
+                        value="' . (isset($_POST['last_name']) ? $last_name : null) . '" />
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <p class=""style="display: flex;justify-content: space-between;">
+                <label for="phone_number"><b>'.esc_html( 'Phone Number', 'woocommerce' ).'</b></label>
+                <input 
+                type="text" 
+                class="woocommerce-Input woocommerce-Input--text input-text" 
+                name="phone" 
+                id="reg_phone" 
+                autocomplete="phone" 
+                placeholder="" 
+                value="' . (isset($_POST['phone']) ? $phone : null) . '" /> <br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
